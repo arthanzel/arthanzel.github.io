@@ -132,3 +132,19 @@ hr {
 .skill {
     margin-bottom: 7px;
 }
+
+.project {
+    padding: 10px;
+    position: relative;
+}
+.project img {
+    width: 100%;
+}
+.projectDesc {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
