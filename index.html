@@ -19,11 +19,11 @@
     <script src="jquery.color.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function() {
-            $("p, .skill, li").each(function() {
+            $(".highlight, .skill, li").each(function() {
                 $(this).data("originalColor", $(this).css("color"));
             });
 
-            $("p, .skill, li").hover(
+            $(".highlight, .skill, li").hover(
                 function() {
                     $(this).animate({ color: "#268bd2" }, 200);
                 },
@@ -38,34 +38,42 @@
     <div class="background">&nbsp;</div>
     <div class="title">
         <h1>Martin Hanzel</h1>
-        <p><i class="fa fa-angle-double-right"></i> Do engineers dream of electric circuits?</p>
+        <p class="subtitle">
+            <span class="highlight">
+                <i class="fa fa-angle-double-right"></i> Do engineers dream of electric circuits?
+            </span>
+        </p>
     </div>
 
     <div class="content">
         <div class="arrow">Go down &nbsp; <i class="fa fa-angle-double-down"></i></div>
+
+        <!-- 
+            About me
+        -->
         <section class="container">
-            <div class="row center">
+            <div class="row portrait">
                 <img src="r/portrait.png" alt="Portrait of Martin Hanzel" width="150px">
-            </div>
-            <div class="row">
                 <h2>Martin Hanzel</h2>
             </div>
             <div class="row">
-                <div class="col-md-5 col-md-offset-1 right">
-                    <p>I'm a programmer, a biologist, a mentor, and a well-rounded geek. I live at the University of Ottawa with a horde of first-year residents who come to me for math help. I've been coding since I was a kid, when I completed some curly braces on my dad's machine when he left his code unattended.</p>
+                <div class="col-md-5 col-md-offset-1 about1">
+                    <p class="highlight">I'm a programmer, a biologist, a mentor, and a well-rounded geek. I live at the University of Ottawa with a horde of first-year residents who come to me for math help. I've been coding since I was a kid, when I completed some curly braces on my dad's machine when he left his code unattended.</p>
                 </div>
-                <div class="col-md-5">
-                    <p>I am especially interested in how computer science relates to other disciplines. I spend my free time trying to quantify things like how DNA works, or why musical instruments sound the way they do, often making cool discoveries and forgetting about what I was doing earlier. </p>
+                <div class="col-md-5 about2">
+                    <p class="highlight">I am especially interested in how computer science relates to other disciplines. I spend my free time trying to quantify things like how DNA works, or why musical instruments sound the way they do, often making cool discoveries and forgetting about what I was doing earlier.</p>
                 </div>
             </div>
         </section>
 
+        <!--
+            Experience
+        -->
         <h2 class="dark">
             Things I've done
         </h2>
-
         <div class="container">
-            <div class="row">
+            <div class="row job">
                 <div class="col-md-4">
                     <h3>University of Ottawa</h3>
                     <i class="fa fa-angle-double-right"></i> 2014 - PRESENT
@@ -78,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row job">
                 <div class="col-md-4">
                     <h3>iGEMuOttawa</h3>
                     <i class="fa fa-angle-double-right"></i> 2013 - 2017
@@ -95,7 +103,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row job">
                 <div class="col-md-4">
                     <h3>Freelance web developer</h3>
                     <i class="fa fa-angle-double-right"></i> 2013 - 2015
@@ -108,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row job">
                 <div class="col-md-4">
                     <h3>ThinkWrap Commerce</h3>
                     <i class="fa fa-angle-double-right"></i> 2011-2014
@@ -121,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row job">
                 <div class="col-md-4">
                     <h3>uEducate</h3>
                     <i class="fa fa-angle-double-right"></i> 2013
@@ -136,10 +144,12 @@
             </div>
         </div>
 
+        <!--
+            Skills
+        -->
         <h2 class="dark">
             Things I can do
         </h2>
-
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-md-offset-1">
@@ -238,9 +248,12 @@
             </div>
         </div>
 
+        <!--
+            Portfolio
+        -->
         <h2 class="dark">
             Things I've worked on
-            <!--Evaluatex (open-source), ly (open-source), uohs, qoc (open-source),-->
+            <!--Evaluatex (open-source), ly (open-source), uohs, qoc (open-source), discovery -->
         </h2>
     </div>
 
