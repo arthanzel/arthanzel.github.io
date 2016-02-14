@@ -167,6 +167,7 @@ hr {
 }
 .projectDesc p {
     color: white;
+    font-weight: 300;
 }
 .projectDesc a {
     color: #66a6e4 !important;
