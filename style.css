@@ -6,6 +6,14 @@ body {
     padding: 0;
 }
 
+a, a:visited, a:hover {
+    color: #268bd2;
+}
+
+strong {
+    font-size: 0.95em;
+}
+
 img {
     max-width: 100%;
 }
@@ -134,17 +142,41 @@ hr {
 }
 
 .project {
-    padding: 10px;
+    height: 0;
+    padding-bottom: 64%;
     position: relative;
 }
 .project img {
+    position: absolute;
     width: 100%;
 }
 .projectDesc {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.86);
+    display: none;
     height: 100%;
     left: 0px;
+    padding: 30px 10px;
     position: absolute;
     top: 0px;
     width: 100%;
+}
+.projectDesc h3 {
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+}
+.projectDesc p {
+    color: white;
+}
+.projectDesc a {
+    color: #66a6e4 !important;
+}
+
+footer {
+    bottom: 10px;
+    color: #666;
+    font-size: 10px;
+    position: fixed;
+    right: 10px;
+    text-align: center;
 }

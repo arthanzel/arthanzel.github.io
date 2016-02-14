@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="r/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="r/favicon-16x16.png" sizes="16x16">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Code+Pro|Raleway:200,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300|Raleway:200,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -31,6 +31,15 @@
                     $(this).animate({ color: $(this).data("originalColor") }, 200);
                 }
             );
+
+            $(".project").hover(
+                function() {
+                    $(this).find(".projectDesc").fadeIn(200);
+                },
+                function() {
+                    $(this).find(".projectDesc").fadeOut(200);
+                }
+            );
         });
     </script>
 </head>
@@ -44,6 +53,8 @@
             </span>
         </p>
     </div>
+
+    <footer>Background image from Star Citizen</footer>
 
     <div class="content">
         <div class="arrow">Go down &nbsp; <i class="fa fa-angle-double-down"></i></div>
@@ -76,7 +87,8 @@
             <div class="row job">
                 <div class="col-md-4">
                     <h3>University of Ottawa</h3>
-                    <i class="fa fa-angle-double-right"></i> 2014 - PRESENT
+                    <p class="highlight"><i class="fa fa-angle-double-right"></i> Residence Mentor</p>
+                    <p class="highlight">2014 - PRESENT</p>
                 </div>
                 <div class="col-md-8">
                     <ul>
@@ -89,12 +101,15 @@
             <div class="row job">
                 <div class="col-md-4">
                     <h3>iGEMuOttawa</h3>
-                    <i class="fa fa-angle-double-right"></i> 2013 - 2017
+                    <p class="highlight"><i class="fa fa-angle-double-right"></i> President</p>
+                    <p class="highlight">2015 - 2017</p>
+                    <p class="highlight"><i class="fa fa-angle-double-right"></i> Research Associate</p>
+                    <p class="highlight">2013 - 2015</p>
                 </div>
                 <div class="col-md-8">
                     <ul>
                         <li>Acted as president of <strong>iGEMuOttawa</strong>, a small team of student researchers, from 2015 to 2017.</li>
-                        <li>Worked as a junior research associate from 2013 to 2015.</li>
+                        <li>Worked as a junior research associate from 2013 to 2015. Received one of only 16 <strong>Undergraduate Research Scholarships</strong> in Canada.</li>
                         <li>Developed specialized bioinformatics software for data analysis and automation. These programs helped us create and model genetic circuits using electronic engineering metaphors.</li>
                         <li>Participated in original and innovative research in a cutting-edge field of biology. Projects included a "living" detector of chemicals, and a novel way of switching genes on and off.</li>
                         <li>Consulted for an up-and-coming biotechnology startup company in Ottawa.</li>
@@ -106,7 +121,7 @@
             <div class="row job">
                 <div class="col-md-4">
                     <h3>Freelance web developer</h3>
-                    <i class="fa fa-angle-double-right"></i> 2013 - 2015
+                    <p class="highlight">2013 - 2015</p>
                 </div>
                 <div class="col-md-8">
                     <ul>
@@ -119,7 +134,8 @@
             <div class="row job">
                 <div class="col-md-4">
                     <h3>ThinkWrap Commerce</h3>
-                    <i class="fa fa-angle-double-right"></i> 2011-2014
+                    <p class="highlight"><i class="fa fa-angle-double-right"></i> Web Developer</p>
+                    <p class="highlight">2011-2014</p>
                 </div>
                 <div class="col-md-8">
                     <ul>
@@ -132,7 +148,8 @@
             <div class="row job">
                 <div class="col-md-4">
                     <h3>uEducate</h3>
-                    <i class="fa fa-angle-double-right"></i> 2013
+                    <p class="highlight"><i class="fa fa-angle-double-right"></i> Founder</p>
+                    <p class="highlight">2013</p>
                 </div>
                 <div class="col-md-8">
                     <ul>
@@ -207,13 +224,21 @@
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
                     </div>
                     <div class="skill">
-                        JSP
+                        MongoDB
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
+                    </div>
+                    <div class="skill">
+                        Angular.js
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
                     </div>
                 </div>
                 <div class="col-md-5">
                     <div class="skill">
                         Ruby
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
+                    </div>
+                    <div class="skill">
+                        SQL
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
                     </div>
                     <div class="skill">
@@ -256,25 +281,69 @@
         </h2>
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-md-offset-1 project">
-                    <img src="r/qoc.jpg" alt="Quantum of Cells">
-                    <div class="projectDesc">
-                        dasdfa
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="project">
+                        <img src="r/qoc.jpg" alt="Quantum of Cells">
+                        <div class="projectDesc">
+                            <h3>Quantum of Cells</h3>
+                            <p>Web-based differential equation solver originally written to prototype genetic circuits. Work in progress.</p>
+                            <p>
+                                <a href="http://arthanzel.github.io/quantumofcells" target="_blank">Demo</a>
+                                &nbsp;<a href="http://github.com/arthanzel/quantumofcells" target="_blank">Github</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-5 project">
-                    <img src="r/evaluatex.jpg" alt="Quantum of Cells">
+                <div class="col-md-5">
+                    <div class="project">
+                        <img src="r/evaluatex.jpg" alt="Evaluatex">
+                        <div class="projectDesc">
+                            <h3>Evaluatex.js</h3>
+                            <p>Latex and ASCIIMath evaluator for Javascript. Formerly written to extend Quantum of Cells, but usable as a standalone library. Experimental.</p>
+                            <p>
+                                <a href="http://arthanzel.github.io/evaluatex" target="_blank">Demo</a>
+                                &nbsp;<a href="http://github.com/arthanzel/evaluatex" target="_blank">Github</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5 col-md-offset-1 project">
-                    <img src="r/ly.jpg" alt="Quantum of Cells">
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="project">
+                        <img src="r/ly.jpg" alt="Ly">
+                        <div class="projectDesc">
+                            <h3>Ly</h3>
+                            <p>Command-runner written in Go. Born out of a NodeJS project called <a href="http://github.com/arthanzel/deity" target="_blank">Deity</a> when JS became unwieldy. Useful when doing web development with lots of servers, compilers, preprocessors, and build tools running.</p>
+                            <p>
+                                <a href="http://arthanzel.github.io/ly" target="_blank">Website</a>
+                                &nbsp;<a href="http://github.com/arthanzel/ly" target="_blank">Github</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5 project">
-                    <img src="r/discover.jpg" alt="Quantum of Cells">
+                <div class="col-md-5">
+                    <div class="project">
+                        <img src="r/discover.jpg" alt="Discover">
+                        <div class="projectDesc">
+                            <h3>Discover</h3>
+                            <p>Experiments in WebGL. Winner of the 2011 Ottawa Science and Engineering Olympics as a high school project. An interactive exploration of our civilization and the energy that keeps it going. Features original music!</p>
+                            <p>
+                                <a href="http://arthanzel.github.io/discover" target="_blank">Website</a>
+                                &nbsp;<a href="http://github.com/arthanzel/discover" target="_blank">Github</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!--
+            Contact
+        -->
+        <h2 class="dark">
+            Things resembling social media
+        </h2>
     </div>
 
 <!--
