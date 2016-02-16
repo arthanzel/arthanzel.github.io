@@ -147,6 +147,7 @@ hr {
     position: relative;
 }
 .project img {
+    box-shadow: 3px 3px 8px #888;
     position: absolute;
     width: 100%;
 }
