@@ -74,6 +74,7 @@ hr {
 .title {
     color: white;
     left: 5%;
+    padding-right: 8%;
     position: fixed;
     text-shadow: 0px 0px 4px black;
     top: 35%;
