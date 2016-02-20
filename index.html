@@ -34,9 +34,11 @@
 
             $(".project").hover(
                 function() {
+                    if ($(this).css("padding-bottom") == "0px") return;
                     $(this).find(".projectDesc").fadeIn(200);
                 },
                 function() {
+                    if ($(this).css("padding-bottom") == "0px") return;
                     $(this).find(".projectDesc").fadeOut(200);
                 }
             );

@@ -178,6 +178,30 @@ hr {
     color: #66a6e4 !important;
 }
 
+@media (max-width:992px) {
+    .project {
+        height: auto;
+        padding-bottom: 0px;
+    }
+
+    .project img {
+        display: block;
+        position: relative;
+    }
+
+    .projectDesc {
+        background: transparent;
+        border-bottom: 1px dashed #bbb;
+        display: block;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    .projectDesc p, .projectDesc h3 {
+        color: black;
+    }
+}
+
 .contact {
     text-align: center;
 }
