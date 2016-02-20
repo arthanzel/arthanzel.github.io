@@ -197,6 +197,10 @@ hr {
         position: relative;
     }
 
+    .projectDesc.last {
+        border-bottom: 0px;
+    }
+
     .projectDesc p, .projectDesc h3 {
         color: black;
     }
