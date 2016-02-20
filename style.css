@@ -174,6 +174,21 @@ hr {
     color: #66a6e4 !important;
 }
 
+.contact {
+    text-align: center;
+}
+
+.logos {
+    border-top: 1px dashed #bbb;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.logos img {
+    max-width: 200px;
+    width: 95%;
+}
+
 footer {
     bottom: 10px;
     color: #666;
