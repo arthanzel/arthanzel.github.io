@@ -1,41 +1,40 @@
 html, body {
-    background: #f3f3f3;
     color: #262626;
-    font: 15px "PT Sans", sans-serif;
+    font: 11pt "PT Sans", sans-serif;
 }
 
 h1 {
-    font: 200 48px "Raleway"
+    font: 200 34pt "Raleway"
 }
-header .cue {
-    text-align: right;
+.blue {
+    color: #059;
 }
 
 h2 {
     border-bottom: 1px solid #bbb;
-    font: 500 20px "Raleway";
+    font: 500 15pt "Raleway";
     font-variant: all-small-caps;
     letter-spacing: 0.08em;
     margin-bottom: 6px;
+    margin-top: 20px;
     padding-bottom: 4px;
 }
+
 h3 {
-    font: 600 14px "Raleway", sans-serif;
-    margin-bottom: 3px;
+    font: 600 11pt "Raleway", sans-serif;
+    margin: 10px 0 3px 0;
+}
+h3:first-child {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 5px;
 }
 
 header .cue {
-    padding-bottom: 25px;
-}
-
-.page {
-    background: white;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px #bbb;
-    height: 11in;
-    margin: 25px auto 15px auto;
-    max-height: 11in;
-    max-width: 8.5in;
+    padding-bottom: 0;
+    text-align: right;
 }
 
 .row {
@@ -43,14 +42,11 @@ header .cue {
     align-items: stretch;
 }
 
-/* Classes for page margins */
-.top-page { padding-top: 0.75in; }
-.left-page { padding-left: 0.75in; }
-
 .cue {
-    background: #f3f3f3;
-    border-right: 1px solid #d0d0d0;
+    background: #f4f4f4;
+    border-right: 1px solid #d0d8ee;
     color: black;
+    text-align: right;
 
     /* Golden ratio */
     flex-basis: 37.8%;
@@ -62,11 +58,9 @@ header .cue {
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
-.experience-points p {
-    margin-bottom: 5px;
-}
-.experience-points p:last-child {
-    margin-bottom: 0;
+.experience-points.last {
+    border: 0;
+    padding-bottom: 0;
 }
 
 .fa.fa-circle-o {
@@ -75,14 +69,64 @@ header .cue {
     vertical-align: 30%;
 }
 
-@media print {
-    html, body {
-        background: white;
+.lhead {
+    padding-right: 5px;
+}
+
+[hidden] {
+    display: none;
+}
+
+@media screen {
+    body {
+        background: #f8f8f8;
+    }
+
+    .print {
+        display: none;
     }
 
     .page {
-        margin: 0;
-        max-width: 100%;
-        width: 100%;
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px #bbb;
+        margin: 25px auto 15px auto;
+        max-width: 8.5in;
+    }
+
+    /* Page margins */
+    .cue { padding-left: 0.8in; }
+    .row > :nth-child(2) { padding-right: 0.8in; }
+    .top-page { padding-top: 0.75in; }
+    .bottom-page { padding-bottom: 0.75in; }
+}
+
+@page {
+    margin: 0.65in 0.8in;
+    size: 8.5in 11in;
+}
+
+@media print {
+    body {
+        font-size: 13pt;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    .screen {
+        display: none;
+    }
+
+    .cue {
+        background: 0;
+        border: 0;
+        flex-basis: 30%;
+        max-width: 30%;
+    }
+
+    section {
+        page-break-inside: avoid;
     }
 }
