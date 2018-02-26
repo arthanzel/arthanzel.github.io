@@ -182,10 +182,11 @@ hr {
     .project {
         height: auto;
         padding-bottom: 0px;
+        text-align: center;
     }
 
     .project img {
-        display: block;
+        max-width: 400px;
         position: relative;
     }
 
@@ -195,6 +196,7 @@ hr {
         display: block;
         padding-bottom: 10px;
         position: relative;
+        text-align: left;
     }
 
     .projectDesc.last {

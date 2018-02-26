@@ -19,11 +19,10 @@
     <script src="jquery.color.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function() {
+            // TODO: Make these CSS3 animations
             $(".highlight, .skill, li").each(function() {
                 $(this).data("originalColor", $(this).css("color"));
-            });
-
-            $(".highlight, .skill, li").hover(
+            }).hover(
                 function() {
                     $(this).animate({ color: "#268bd2" }, 200);
                 },
@@ -35,15 +34,20 @@
             $(".project").hover(
                 function() {
                     // if ($(this).css("padding-bottom") == "0px") return;
-                    if ($(window).width() <= 992) return;
+                    if ($(window).width() < 992) return;
                     $(this).find(".projectDesc").fadeIn(200);
                 },
                 function() {
                     // if ($(this).css("padding-bottom") == "0px") return;
-                    if ($(window).width() <= 992) return;
+                    if ($(window).width() < 992) return;
                     $(this).find(".projectDesc").fadeOut(200);
                 }
-            );
+            ).click(function() {
+                // if ($(this).css("padding-bottom") == "0px") return;
+                if ($(window).width() < 992) return;
+                $(".projectDesc").fadeOut(200);
+                $(this).find(".projectDesc").fadeIn(200);
+            });
         });
     </script>
 </head>
@@ -75,13 +79,38 @@
             </div>
             <div class="row">
                 <div class="col-md-5 col-md-offset-1 about1">
-                    <p class="highlight">I'm a programmer, a biologist, a mentor, and a well-rounded geek. I live at the University of Ottawa, where a horde of first-year residents come to me for math help. I've been coding since I was a kid, when I completed some curly braces on my dad's machine when he left his code unattended.</p>
+                    <p class="highlight">I'm a programmer, a biologist, a mentor, and a well-rounded geek. I studied and lived at the University of Ottawa, where a horde of first-year residents used to come to me for math help. I've been coding since I was a kid, when I completed some curly braces on my father's unattended machine.</p>
                 </div>
                 <div class="col-md-5 about2">
-                    <p class="highlight">I am especially interested in how computer science relates to other disciplines. I spend my free time trying to quantify things like how DNA works, or why musical instruments sound the way they do, often making cool discoveries and forgetting about what I was doing earlier.</p>
+                    <p class="highlight">I studied biomedical science because I was fascinated by how living things resemble computers. Programming cells is a difficult, but satisfying problem to work on. I'm now looking for other difficult and satisfying problems. Perhaps your company has some. I can help solve them.</p>
                 </div>
             </div>
         </section>
+
+        <!--
+            Education
+        -->
+        <h2 class="dark">
+            Things I've studied
+        </h2>
+        <div class="container">
+            <div class="col-md-6" style="text-align: center;">
+                <h3 class="highlight">B.Sc. Biomedical Science</h3>
+                <p class="highlight">
+                    Minor in Computer Science<br>
+                    University of Ottawa<br>
+                    <em>Magna cum laude</em><br>
+                    2013-2017
+                </p>
+            </div>
+            <div class="col-md-6" style="text-align: center;">
+                <h3 class="highlight">B.Sc. Computer Science</h3>
+                <p class="highlight">
+                    University of Ottawa<br>
+                    Class of 2018
+                </p>
+            </div>
+        </div>
 
         <!--
             Experience
@@ -98,7 +127,9 @@
                 </div>
                 <div class="col-md-8">
                     <ul>
-                        <li>Designed and piloted a brand-new, live-in mentor program so that student mentors can provide full-time support to students. This program has grown immensely in the space of a year and is now one of the proudest accomplishments of uOttawa's Housing Services and the Residence Mentoring Centre.</li>
+                        <li>Designed and piloted a mentors-in-residence program to provide full-time academic support to first-year university students.</li>
+                        <li>Increased resident conversion rate by a factor of 10.</li>
+                        <li>Developed software to automate data entry and reduced bureaucratic workload from hours to a few minutes.</li>
                         <li>Ran weekly study groups and helped organize big game show-like events for first-year residents.</li>
                     </ul>
                 </div>
@@ -114,12 +145,12 @@
                 </div>
                 <div class="col-md-8">
                     <ul>
-                        <li>Acted as president of <strong>iGEMuOttawa</strong>, a small team of student researchers, from 2014 to 2016.</li>
-                        <li>Worked as a junior research associate from 2013 to 2014. Received one of only 16 <strong>Undergraduate Research Scholarships</strong> in Canada.</li>
-                        <li>Developed specialized bioinformatics software for data analysis and automation. These programs helped us create and model genetic circuits using electronic engineering metaphors.</li>
-                        <li>Participated in original and innovative research in a cutting-edge field of biology. Projects included a "living" detector of chemicals, and a novel way of switching genes on and off.</li>
-                        <li>Presented research three times at a world-wide conference in Boston.</li>
-                        <li>Consulted for an up-and-coming biotechnology startup company in Ottawa.</li>
+                        <li>Led <strong>iGEMuOttawa</strong>, a genetic engineering/synthetic biology research group made up of undergraduate student researchers.</li>
+                        <li>Built <em>in vivo</em> genetic networks using computing and electronic engineering metaphors.</li>
+                        <li>Oversaw the research group's finances, fundraising, and hiring.</li>
+                        <li>Wrote bioinformatics software for data analysis and genetic tooling.</li>
+                        <li>Presented own research three times at a world-wide conference in Boston.</li>
+                        <li>Consulted for a biotechnology startup in Ottawa.</li>
                         <li>Secured sponsorship from universities and biotech companies.</li>
                     </ul>
                 </div>
@@ -132,7 +163,7 @@
                 </div>
                 <div class="col-md-8">
                     <ul>
-                        <li>Made some cool websites for student groups around uOttawa.</li>
+                        <li>Designed custom websites for student groups at uOttawa.</li>
                         <li>Worked closely with clients to deliver and maintain pixel-perfect solutions.</li>
                         <li>Clients include the University of Ottawa Healthcare Symposium, and Actions for Healthcare.</li>
                     </ul>
@@ -147,8 +178,9 @@
                 </div>
                 <div class="col-md-8">
                     <ul>
-                        <li>Worked on new online storefronts for some big companies, including Princess Auto, Loyalty One, Lorex, Simons, and others.</li>
-                        <li>Wrote a bunch of code that helped the company to better find and market to clients. This tool condensed weeks of labour into the space of an hour and saved countless days of data analysis.</li>
+                        <li>Developed full-stack B2B and B2C e-commerce applications for large retailers using the Oracle Commerce framework.</li>
+                        <li>Clients include Princess Auto, Lorex, Simons, and Videotron.</li>
+                        <li>Developed software to analyse e-commerce trends and improve ThinkWrap's ability to market to potential clients.</li>
                     </ul>
                 </div>
             </div>
@@ -163,7 +195,7 @@
                     <ul>
                         <li>Founded uEducate, a club dedicated to promoting higher education to everyone.</li>
                         <li>Provided an annual science competition to Ontario high school students.</li>
-                        <li>Created financial scholarships for aspiring science students at uOttawa.</li>
+                        <li>Created financial scholarships for aspiring science students in the amount of $4000.</li>
                     </ul>
                 </div>
             </div>
@@ -176,31 +208,6 @@
             Things I can do
         </h2>
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-1">
-                    <div class="skill">
-                        Leadership
-                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                    </div>
-                    <div class="skill">
-                        Creativity
-                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="skill">
-                        Adaptability
-                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                    </div>
-                    <div class="skill">
-                        Dedication
-                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
             <div class="row">
                 <div class="col-md-5 col-md-offset-1">
                     <div class="skill">
@@ -236,7 +243,7 @@
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
                     </div>
                     <div class="skill">
-                        Angular.js
+                        React
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
                     </div>
                 </div>
@@ -279,13 +286,42 @@
                     </div>
                 </div>
             </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="skill">
+                        English
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                    </div>
+                    <div class="skill">
+                        French
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="skill">
+                        Slovak
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                    </div>
+                    <div class="skill">
+                        Czech
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                Able to live and work in Canada and anywhere in the European Union.
+            </div>
+
         </div>
 
         <!--
             Portfolio
         -->
         <h2 class="dark">
-            Things I made
+            Things I've made
         </h2>
         <div class="container">
             <div class="row">
@@ -294,7 +330,8 @@
                         <img src="r/qoc.jpg" alt="Quantum of Cells">
                         <div class="projectDesc">
                             <h3>Quantum of Cells</h3>
-                            <p>Web-based differential equation solver originally written to prototype genetic circuits. Work in progress.</p>
+                            <p>Web-app differential equation solver originally written to prototype genetic circuits. Not quite finished, but
+                                <a href="https://arthanzel.github.io/csi3540-project">version 2</a> is in the works.</p>
                             <p>
                                 <a href="http://arthanzel.github.io/quantumofcells" target="_blank">Demo</a>
                                 &nbsp;<a href="http://github.com/arthanzel/quantumofcells" target="_blank">Github</a>
@@ -359,7 +396,7 @@
                     <p>arthanzel (at) gmail (dot) com</p>
                 </div><div class="col-md-5">
                     <h3>Read my full CV</h3>
-                    <p>The <a href="cv.html" target="_blank">online</a> version</p>
+                    <!--<p>The <a href="cv.html" target="_blank">online</a> version</p>-->
                     <p>Or download a <a href="martin-hanzel-cv.pdf" target="_blank">PDF</a></p>
                 </div>
             </div>
