@@ -14,42 +14,6 @@
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
-
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="jquery.color.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(function() {
-            // TODO: Make these CSS3 animations
-            $(".highlight, .skill, li").each(function() {
-                $(this).data("originalColor", $(this).css("color"));
-            }).hover(
-                function() {
-                    $(this).animate({ color: "#268bd2" }, 200);
-                },
-                function() {
-                    $(this).animate({ color: $(this).data("originalColor") }, 200);
-                }
-            );
-
-            $(".project").hover(
-                function() {
-                    // if ($(this).css("padding-bottom") == "0px") return;
-                    if ($(window).width() < 992) return;
-                    $(this).find(".projectDesc").fadeIn(200);
-                },
-                function() {
-                    // if ($(this).css("padding-bottom") == "0px") return;
-                    if ($(window).width() < 992) return;
-                    $(this).find(".projectDesc").fadeOut(200);
-                }
-            ).click(function() {
-                // if ($(this).css("padding-bottom") == "0px") return;
-                if ($(window).width() < 992) return;
-                $(".projectDesc").fadeOut(200);
-                $(this).find(".projectDesc").fadeIn(200);
-            });
-        });
-    </script>
 </head>
 <body>
     <div class="background">&nbsp;</div>
@@ -57,12 +21,11 @@
         <h1>Martin Hanzel</h1>
         <p class="subtitle">
             <span class="highlight">
-                <i class="fa fa-angle-double-right"></i> Do engineers dream of electric circuits?
+                <i class="fa fa-angle-double-right"></i> Computerphile since before I could read
             </span>
         </p>
     </div>
     <a href="https://github.com/arthanzel" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
-
 
     <footer>Background image from Star Citizen</footer>
 
@@ -76,13 +39,14 @@
             <div class="row portrait">
                 <img src="r/portrait.png" alt="Portrait of Martin Hanzel" width="150px">
                 <h2>Martin Hanzel</h2>
+                <span>Full-stack developer</span>
             </div>
             <div class="row">
                 <div class="col-md-5 col-md-offset-1 about1">
                     <p class="highlight">I'm a programmer, a biologist, a mentor, and a well-rounded geek. I studied and lived at the University of Ottawa, where a horde of first-year residents used to come to me for math help. I've been coding since I was a kid, when I completed some curly braces on my father's unattended machine.</p>
                 </div>
                 <div class="col-md-5 about2">
-                    <p class="highlight">I studied biomedical science because I was fascinated by how living things resemble computers. Programming cells is a difficult, but satisfying problem to work on. I'm now looking for other difficult and satisfying problems. Perhaps your company has some. I can help solve them.</p>
+                    <p class="highlight">I combined biology and programming because I was fascinated by how living things resemble computers. Programming cells is a difficult, but satisfying problem to work on. I'm now looking for other difficult and satisfying problems. Perhaps your company has some. I can help solve them.</p>
                 </div>
             </div>
         </section>
@@ -107,7 +71,7 @@
                 <h3 class="highlight">B.Sc. Computer Science</h3>
                 <p class="highlight">
                     University of Ottawa<br>
-                    Class of 2018
+                    2017-2019
                 </p>
             </div>
         </div>
@@ -119,6 +83,22 @@
             Things I've done
         </h2>
         <div class="container">
+            <div class="row job">
+                <div class="col-md-4">
+                    <h3>ThinkWrap Commerce / Tenzing Inc.</h3>
+                    <p class="highlight"><i class="fa fa-angle-double-right"></i> Full-Stack Developer</p>
+                    <p class="highlight">2011-2018</p>
+                </div>
+                <div class="col-md-8">
+                    <ul>
+                        <li>Led research and development for a next-generation, backend-agnostic commerce framework built on a custom isomorphic platform.</li>
+                        <li>Developed full-stack B2B and B2C e-commerce applications for large retailers using the Oracle Commerce framework.</li>
+                        <li>Clients include Princess Auto, Lorex, Simons, and Videotron.</li>
+                        <li>Developed software to analyse e-commerce trends and improve ThinkWrap's ability to market to potential clients.</li>
+                    </ul>
+                </div>
+            </div>
+                    
             <div class="row job">
                 <div class="col-md-4">
                     <h3>University of Ottawa</h3>
@@ -173,21 +153,6 @@
 
             <div class="row job">
                 <div class="col-md-4">
-                    <h3>ThinkWrap Commerce</h3>
-                    <p class="highlight"><i class="fa fa-angle-double-right"></i> Web Developer</p>
-                    <p class="highlight">2011-2016</p>
-                </div>
-                <div class="col-md-8">
-                    <ul>
-                        <li>Developed full-stack B2B and B2C e-commerce applications for large retailers using the Oracle Commerce framework.</li>
-                        <li>Clients include Princess Auto, Lorex, Simons, and Videotron.</li>
-                        <li>Developed software to analyse e-commerce trends and improve ThinkWrap's ability to market to potential clients.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row job">
-                <div class="col-md-4">
                     <h3>uEducate</h3>
                     <p class="highlight"><i class="fa fa-angle-double-right"></i> Founder</p>
                     <p class="highlight">2013</p>
@@ -224,6 +189,10 @@
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
                     </div>
                     <div class="skill">
+                        React
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                    </div>
+                    <div class="skill">
                         Java
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
                     </div>
@@ -244,15 +213,11 @@
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
                     </div>
                     <div class="skill">
-                        React
+                        Typescript
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="skill">
-                        Ruby
-                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
-                    </div>
                     <div class="skill">
                         SQL
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
@@ -270,12 +235,16 @@
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
                     </div>
                     <div class="skill">
-                        Python
+                        C#
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
                     </div>
                     <div class="skill">
-                        C#
-                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
+                        Ruby
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
+                    </div>
+                    <div class="skill">
+                        Python
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
                     </div>
                     <div class="skill">
                         Scala
@@ -299,6 +268,10 @@
                     <div class="skill">
                         French
                         <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
+                    </div>
+                    <div class="skill">
+                        Spanish
+                        <span class="pull-right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -326,52 +299,21 @@
         </h2>
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-md-offset-1">
+                <div class="col-md-4">
                     <div class="project">
-                        <img src="r/qoc.jpg" alt="Quantum of Cells">
-                        <div class="projectDesc">
+                        <div><img src="r/qoc.jpg" alt="Quantum of Cells" /></div>
+                        <div class="contents">
                             <h3>Quantum of Cells</h3>
-                            <p>Web-app differential equation solver originally written to prototype genetic circuits. Not quite finished, but
-                                <a href="https://arthanzel.github.io/csi3540-project">version 2</a> is in the works.</p>
+                            <p>Web-app differential equation solver originally written to prototype genetic circuits, but can prototype nearly any initial-value dynamical system.</p>
                             <p>
                                 <a href="http://arthanzel.github.io/quantumofcells" target="_blank">Demo</a>
                                 &nbsp;<a href="http://github.com/arthanzel/quantumofcells" target="_blank">Github</a>
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5">
                     <div class="project">
-                        <img src="r/evaluatex.jpg" alt="Evaluatex">
-                        <div class="projectDesc">
-                            <h3>Evaluatex.js</h3>
-                            <p>Latex and ASCIIMath evaluator for Javascript. Formerly written to extend Quantum of Cells, but usable as a standalone library. Experimental.</p>
-                            <p>
-                                <a href="http://arthanzel.github.io/evaluatex" target="_blank">Demo</a>
-                                &nbsp;<a href="http://github.com/arthanzel/evaluatex" target="_blank">Github</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5 col-md-offset-1">
-                    <div class="project">
-                        <img src="r/ly.jpg" alt="Ly">
-                        <div class="projectDesc">
-                            <h3>Ly</h3>
-                            <p>Command-runner written in Go. Born out of a NodeJS project called <a href="http://github.com/arthanzel/deity" target="_blank">Deity</a> when JS became unwieldy. Useful when doing web development with lots of servers, compilers, preprocessors, and build tools running.</p>
-                            <p>
-                                <a href="http://arthanzel.github.io/ly" target="_blank">Website</a>
-                                &nbsp;<a href="http://github.com/arthanzel/ly" target="_blank">Github</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="project">
-                        <img src="r/discover.jpg" alt="Discover">
-                        <div class="projectDesc last">
+                        <div><img src="r/discover.jpg" alt="Discover" /></div>
+                        <div class="contents">
                             <h3>Discover</h3>
                             <p>Experiments in WebGL. Winner of the 2011 Ottawa Science and Engineering Olympics as a high school project. An interactive exploration of our civilization and the energy that keeps it going. Features original music!</p>
                             <p>
@@ -381,8 +323,55 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="project">
+                        <div><img src="r/evaluatex.jpg" alt="Evaluatex" /></div>
+                        <div class="contents">
+                            <h3>Evaluatex</h3>
+                            <p>Latex and ASCIIMath evaluator for Javascript. Formerly written to extend Quantum of Cells, but usable as a standalone library. Written in a weekend as an experiment in compilers and interpreters.</p>
+                            <p>
+                                <a href="http://arthanzel.github.io/evaluatex" target="_blank">Demo</a>
+                                &nbsp;<a href="http://github.com/arthanzel/evaluatex" target="_blank">Github</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div><img src="r/tre.png" alt="The River Engine" /></div>
+                        <div class="contents">
+                            <h3>The River Engine</h3>
+                            <p>Research project in creating an agent-based model for simulating the lives of fish in a river ecosystem using Java and JavaFX. Thesis included!</p>
+                            <p>
+                                <a href="https://github.com/arthanzel/theriverengine/blob/master/Thesis.pdf" target="_blank">Thesis</a>
+                                &nbsp;<a href="http://github.com/arthanzel/theriverengine" target="_blank">Github</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project">
+                        <div><img src="r/ly.jpg" alt="Ly" /></div>
+                        <div class="contents">
+                            <h3>Ly</h3>
+                            <p>Command-runner written in Go. Born out of a NodeJS project called <a href="http://github.com/arthanzel/deity" target="_blank">Deity</a> when JS became unwieldy. Useful when doing web development with lots of servers, compilers, preprocessors, and build tools running.</p>
+                            <p>
+                                <a href="http://arthanzel.github.io/ly" target="_blank">Website</a>
+                                &nbsp;<a href="http://github.com/arthanzel/ly" target="_blank">Github</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!--
+            Awards
+        -->
+        <!--<h2 class="dark">
+            Things I've won
+        </h2>
+        <div class="container awards">
+            <p class="award"></p>
+        </div>-->
 
         <!--
             Contact
@@ -391,20 +380,15 @@
             Other things
         </h2>
         <div class="container contact">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-1">
-                    <h3>Shoot me a mail</h3>
-                    <p>arthanzel (at) gmail (dot) com</p>
-                </div><div class="col-md-5">
-                    <h3>Read my full CV</h3>
-                    <!--<p>The <a href="cv.html" target="_blank">online</a> version</p>-->
-                    <p>Download a <a href="martin-hanzel-cv.pdf" target="_blank">PDF</a></p>
-                </div>
-            </div>
             <div class="row logos">
-                <div class="col-md-5 col-md-offset-1">
+                <div class="col-md-4">
+                    <h3 style="margin-top: 0;">Shoot me a mail</h3>
+                    <p>arthanzel (at) gmail (dot) com</p>
+                </div>
+                <div class="col-md-4">
                     <a href="https://github.com/arthanzel" target="_blank"><img src="r/github.png" alt=""></a>
-                </div><div class="col-md-5">
+                </div>
+                <div class="col-md-4">
                     <a href="https://linkedin.com/in/martin-hanzel-99032ab8" target="_blank"><img src="r/linkedin.png" alt=""></a>
                 </div>
             </div>
