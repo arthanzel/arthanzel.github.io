@@ -1,4 +1,0 @@
-- Design a favicon
-- New portrait
-- Move to Bootstrap 4
-- CSS transitions
