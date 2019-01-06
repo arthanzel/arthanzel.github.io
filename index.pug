@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    include includes/head.pug
+
+    body
+        include includes/fork-me.pug
+        include includes/splash.pug
+
+        .content
+            .arrow
+                | Go down &nbsp;&nbsp;
+                i.fa.fa-angle-double-down
+
+            section
+                include includes/about.pug
+            section
+                include includes/education.pug
+            section
+                include includes/technical.pug
+            section
+                include includes/management.pug
+            section
+                include includes/skills.pug
+            section
+                include includes/projects.pug
+
+            // TODO: Awards
+
+            section
+                include includes/contact.pug
+    

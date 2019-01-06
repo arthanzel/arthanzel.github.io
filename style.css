@@ -38,7 +38,7 @@ h2.dark {
 
 section {
     /*border-bottom: 1px solid #268bd2;*/
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 ul {
@@ -128,22 +128,9 @@ hr {
     font-style: oblique;
 }
 
-.about1 {
-    text-align: right;
-}
-
-@media (max-width:992px) {
-    .about1, .about2 {
-        text-align: center;
-    }
-}
-
 .job {
     border-bottom: 1px dashed #bbb;
     margin-top: 0px;
-}
-.job h3 {
-    /*margin-top: 7px;*/
 }
 .job:last-child {
     border-bottom: 0px;
