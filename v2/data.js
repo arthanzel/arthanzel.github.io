@@ -191,7 +191,6 @@ module.exports = {
     },
     {
       title: 'University Gold Medal',
-      subtitle: 'Faculty of Engineering',
       year: 2019,
       note: 'For the highest standing in the faculty of Engineering',
       institution: 'University of Ottawa',
@@ -199,7 +198,6 @@ module.exports = {
     },
     {
       title: 'Faculty Plaque',
-      subtitle: 'Computer Science',
       year: 2019,
       note: 'For the highest standing in the Department of Computer Science',
       institution: 'University of Ottawa',
@@ -214,8 +212,8 @@ module.exports = {
     },
     {
       title: 'Undergraduate Research Scholarship',
-      subtitle: 'One of 16 recipients',
-      year: 2019,
+      year: 2013,
+      note: 'One of 16 prestigious research positions awarded every year',
       institution: 'University of Ottawa',
       href: 'https://science.uottawa.ca/en/why-uottawa-science/scholarships-and-financial-aid/undergraduate-research-scholarship',
     },
