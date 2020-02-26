@@ -5,7 +5,7 @@
   "main": "",
   "repository": "git://github.com/arthanzel/arthanzel.github.io",
   "author": "Martin Hanzel <arthanzel@gmail.com>",
-  "license": " ",
+  "license": "",
   "private": true,
   "scripts": {
     "build": "pug -P index.pug",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "vue-template-compiler": "^2.6.11"
   }
 }
