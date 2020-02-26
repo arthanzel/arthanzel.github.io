@@ -16,26 +16,108 @@ blue      = #268bd2;
 cyan      = #2aa198;
 green     = #859900;
 
-body {
-  background: mix(#f3f3f3, base3, 95%);
-  color: mix(base01, base02, 50%);
-  font: 500 16px 'Open Sans', Arial, sans-serif;
+// Domain style defs
+bgColor     = mix(#f3f3f3, base3, 75%);
+textColor   = base00;
+emphColor   = mix(base02, base01, 20%);
+headColor   = mix(blue, base01, 80%);
+titleColor  = emphColor;
+sepColor    = mix(base1, base2, 30%)
 
-  h1, h2 {
-    color: mix(blue, base01, 75%);
+bgColorDark     = base03;
+textColorDark   = base0;
+emphColorDark   = mix(base1, base2, 80%);
+headColorDark   = mix(blue, base01, 90%);
+titleColorDark  = emphColorDark;
+sepColorDark    = mix(base01, base02, 30%);
+
+bodyFont        = 'Open Sans', Arial, sans-serif;
+monoFont        = 'Source Code Pro', Consolas, monospace;
+
+colorScheme(bg, text, emph, head, title, sep, card, cardShadow, filter) {
+  background-color: bg;
+  color: text;
+  strong { color: emph; }
+  h1, h2 { color: head; }
+  h3 { color: title; }
+  .card {
+    background-color: card;
+    box-shadow: cardShadow
+  }
+  .x-sep, .y-sep { border-color: sep; }
+  .star, .half-star, .empty-star { filter: filter; }
+}
+
+// Light/dark color scheme defs
+body {
+  &:not(.dark) {
+    colorScheme(
+      bgColor,
+      textColor,
+      emphColor,
+      headColor,
+      titleColor,
+      sepColor,
+      lighten(bgColor, 50%), // Card background color
+      2px 2px 20px 0px darken(bgColor, 5%), // Card box shadow
+      opacity(50%), // Stars filter
+    );
+    .switch-theme { background-color: base02; border-color: base0; }
   }
 
+  &.dark {
+    colorScheme(
+      bgColorDark,
+      textColorDark,
+      emphColorDark,
+      headColorDark,
+      titleColorDark,
+      sepColorDark,
+      lighten(bgColorDark, 3%),
+      2px 2px 20px 0px darken(bgColorDark, 10%),
+      invert() opacity(45%),
+    );
+    a { color: yellow; }
+
+    .switch-theme { background-color: base2; border-color: base00; }
+    footer { background-color base02; border-color: mix(yellow, base02, 50%); }
+  }
+}
+
+// Theme switcher
+.theme-switcher {
+  cursor: pointer;
+  font: 13px monoFont;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  &:hover span {
+    text-decoration: underline;
+  }
+  .switch-theme {
+    border-radius: 99px;
+    border-style: solid;
+    border-width: 0px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+  }
+}
+
+// Layout
+
+body {
+  font: 500 16px bodyFont;
+
   h3 {
-    color: mix(violet, base02, 50%);
-    color: base02;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: bodyFont;
     font-size: 24px;
     font-weight: 400;
   }
 
-  &.dark {
-    background: base03;
-    color: base1;
+  strong {
+    font-weight: 600;
   }
 }
 
@@ -47,21 +129,24 @@ p {
 }
 
 h1, h2 {
-  font-family: 'Source Code Pro', Consolas, monospace;
+  font-family: monoFont;
   font-weight: 500;
+  margin-bottom: 16px;
   margin-top: 20px;
   position: relative;
   &::before { position: absolute; }
 }
 
 h1::before {
-  content: "# ";
-  left: -30px;
+  content: "#";
+  left: -28px;
+  @media (max-width: 1020px) { display: none; }
 }
 
 h2::before {
-  content: "## ";
-  left: -50px;
+  content: "##";
+  left: -42px;
+  @media (max-width: 1020px) { display: none; }
 }
 
 .lead {
@@ -71,7 +156,6 @@ h2::before {
 .star, .half-star, .empty-star {
   background-repeat: no-repeat;
   background-position: left center;
-  color: red;
   display: inline-block;
   height: 1em;
   vertical-align: baseline;
@@ -92,27 +176,29 @@ h2::before {
 
 .job {
   margin-top: 0;
-  padding: 7px 0;
-
+  padding-bottom: 8px;
+  & + & { padding-top: 8px; }
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    li { margin: 7px 0px; }
+    li + li { margin-top: 6px; }
   }
 }
 
 .x-sep + .x-sep {
-  border-left: 1px dashed mix(base1, base2, 30%);
+  border-left: 1px dashed sepColor;
+  @media (max-width: 992px) {
+    border-left: 0;
+  }
 }
 
 .y-sep + .y-sep {
-  border-top: 1px dashed mix(base1, base2, 30%);
+  border-top: 1px dashed sepColor;
 }
 
-// @media(min-width: 1200px) {
-//   .container {
-//     // border: 1px solid blue;
-//     max-width: 900px;
-//   }
-// }
+footer {
+  margin-top: 48px;
+  opacity: 0.05;
+  &::selection {background: 0;}
+}

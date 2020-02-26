@@ -2,7 +2,7 @@ module.exports = {
   name: 'Martin Hanzel',
   title: '(Remote) software developer',
   contact: {
-    email: 'martin at hanzel dot io',
+    email: 'martin@hanzel.io',
     github: 'https://github.com/arthanzel',
     gitlab: 'https://gitlab.com/arthanzel',
     linkedin: 'https://linkedin.com/in/arthanzel',
@@ -11,7 +11,7 @@ module.exports = {
     'I\'m a computer scientist, a genetic engineer, a mentor, and a successful geek. I love to share my passion for technology with everyone around me. I live in Lausanne, Switzerland, where I\'m working towards a Master\'s degree at École Polytechnique Fédérale de Lausanne in one of the best computer science courses in the world.',
     'In my adventures, I combined biology and programming because I was fascinated by how living things resemble computers. Programming life is a problem just as difficult and satisfying as programming silicon. I\'m now looking for other difficult and satisfying problems. Perhaps your company has some. I can help solve them.',
   ],
-  location: 'Capable of working remotely. Living in Lausanne, Switzerland. Citizen of the Slovak Republic (EU) and Canada. Swiss permit B.',
+  location: 'Capable of working remotely. Living in **Lausanne**, Switzerland. Citizen of the **Slovak Republic** (EU) and **Canada**. Swiss permit B.',
   education: [
     {
       title: 'Master of Computer Science',
@@ -43,7 +43,7 @@ module.exports = {
       year: 2019,
       tag: 'technical',
       remarks: [
-        'Self-managed tasks in an **all-remote** team that works around the clock.',
+        'Self-managed tasks in an **all-remote** team of people from around the world.',
         'Participated in **code reviews** daily.',
         'Realized UI designs in **responsive CSS** for four or more device sizes.',
         'Created new **UI components** and migrated legacy jQuery code to **ES6 + Vue**.',
@@ -60,7 +60,7 @@ module.exports = {
       remarks: [
         'Led R&D for next-generation **e-commerce** technologies',
         'Developed **full-stack** B2B and B2C e-commerce applications for large retailers using the **Oracle Commerce** framework.',
-        '**Analyzed marked trends** and improved the company\'s ability to market to potential clients.',
+        '**Analyzed market trends** and improved the company\'s ability to market to potential clients.',
         'Worked **remotely** from Valencia, Spain while collaborating with a team in Ottawa, Canada.',
         'Clients include: Princess Auto, Lorex, Simons, and Videotron.',
       ],
@@ -71,7 +71,7 @@ module.exports = {
       tag: 'technical',
       remarks: [
         'Designed and developed **custom webapps** for student groups at the University of Ottawa',
-        'Worked closely with clients to deliver and maintain **pixel-perfect solutions**',
+        'Worked closely with clients to deliver and maintain **pixel-perfect** solutions',
         'Clients include: University of Ottawa Healthcare Symposium, Actions for Healthcare, iGEMuOttawa',
       ],
     },
@@ -84,14 +84,14 @@ module.exports = {
         'Designed and piloted a mentors-in-residence program to provide full-time academic support to first-year students.',
         'Increased funding for the Mentoring Centre by **300%** within a year.',
         'Increased resident conversion rate **by a factor of 10** within a year.',
-        'Developed software to **automate data entry and reduced bureaucratic workload** from hours to a few minutes.',
-        'Organized weekly study groups and **coordinated monthly community-building events** for residents.',
+        'Developed software to **automate** data entry and reduced bureaucratic workload from hours to a few minutes.',
+        'Organized weekly study groups and coordinated monthly **community-building events** for residents.',
       ],
     },
     {
       title: 'President / Research Associate',
       place: 'University of Ottawa iGEM Team',
-      year: [2013, 2014],
+      year: [2013, 2016],
       tag: 'people',
       remarks: [
         'Led **iGEMuOttawa**, a genetic engineering and synthetic biology research group made up of undergraduate student researchers.',
@@ -125,13 +125,14 @@ module.exports = {
     Linux: 5,
     Git: 5,
     Go: 4,
-    Ruby: 3,
     'C#': 4,
     'C/C++': 4,
     Python: 4,
+    'SQL + RDBMS': 4,
+    NoSQL: 4,
     Mathematica: 4,
     Matlab: 4,
-    'SQL + Databases': 4,
+    Ruby: 3,
     OCaml: 2,
   },
   languages: {

@@ -59,7 +59,7 @@ const marked = require("marked");
 </script>
 
 <template>
-  <div class="mt-3">
+  <div class="container mt-3">
     <h1>Martin Hanzel</h1>
     <p class="lead">(Remote) software developer</p>
     <!-- TODO: Add hashes and permalinks to headers -->
@@ -82,7 +82,7 @@ const marked = require("marked");
         href="martin-hanzel-resume-onepage.pdf"
       >PDF</a>.
     </p>
-    <p>{{ data.location }}</p>
+    <p v-html="markdown(data.location)"></p>
 
     <h2>Education</h2>
     <!-- <div class="row"><Ed :ed="data.education[0]" /></div> -->
@@ -98,9 +98,9 @@ const marked = require("marked");
 
     <h2>Skills</h2>
     <div class="row mb-4">
-      <div class="col x-sep" v-for="(skillCol, i) in skills" :key="i">
+      <div class="col-lg-4 x-sep" v-for="(skillCol, i) in skills" :key="i">
         <div
-          class="px-3 my-2 d-flex justify-content-between"
+          class="px-3 mb-2 d-flex justify-content-between"
           v-for="[name, rating] in skillCol"
           :key="name"
         >
@@ -110,9 +110,9 @@ const marked = require("marked");
       </div>
     </div>
     <div class="row">
-      <div class="col x-sep" v-for="(skillCol, i) in languages" :key="i">
+      <div class="col-md-4 x-sep" v-for="(skillCol, i) in languages" :key="i">
         <div
-          class="px-3 my-2 d-flex justify-content-between"
+          class="px-3 mb-2 d-flex justify-content-between"
           v-for="[name, rating] in skillCol"
           :key="name"
         >
