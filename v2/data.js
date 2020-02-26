@@ -185,7 +185,7 @@ module.exports = {
     {
       title: 'Cognos Prize',
       year: 2019,
-      note: 'For best research project in Computer Science',
+      note: 'For best thesis in Computer Science',
       institution: 'University of Ottawa',
       href: 'https://scholarships.uottawa.ca/p/a/18709/',
     },
