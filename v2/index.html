@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martin Hanzel</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600|Source+Code+Pro:500,600">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600|Source+Code+Pro:500">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   <!-- TODO: New favicons, and base64-embed them -->
@@ -15,29 +15,39 @@
 body:not(.dark) {
   background-color: #f5f3ef;
   color: #657b83;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body:not(.dark) strong {
   color: #47626a;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body:not(.dark) h1,
 body:not(.dark) h2 {
   color: #3085bf;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body:not(.dark) h3 {
   color: #47626a;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body:not(.dark) .card {
   background-color: #faf9f7;
   box-shadow: 2px 2px 20px 0px #ece8e0;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body:not(.dark) .x-sep,
 body:not(.dark) .y-sep {
   border-color: #d2d2c5;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body:not(.dark) .star,
 body:not(.dark) .half-star,
 body:not(.dark) .empty-star {
   filter: opacity(50%);
+}
+body:not(.dark) a {
+  color: #268bd2;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body:not(.dark) .switch-theme {
   background-color: #073642;
@@ -46,24 +56,30 @@ body:not(.dark) .switch-theme {
 body.dark {
   background-color: #002b36;
   color: #839496;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body.dark strong {
   color: #a5afab;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body.dark h1,
 body.dark h2 {
   color: #2b88c8;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body.dark h3 {
   color: #a5afab;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body.dark .card {
   background-color: #003644;
   box-shadow: 2px 2px 20px 0px #002731;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body.dark .x-sep,
 body.dark .y-sep {
   border-color: #1f4651;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body.dark .star,
 body.dark .half-star,
@@ -72,14 +88,12 @@ body.dark .empty-star {
 }
 body.dark a {
   color: #b58900;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 body.dark .switch-theme {
   background-color: #eee8d5;
   border-color: #657b83;
-}
-body.dark footer {
-  background-color: #073642;
-  border-color: #5e5f21;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 .theme-switcher {
   cursor: pointer;
@@ -230,7 +244,7 @@ footer::selection {
     <a href="martin-hanzel-cv.json">full CV</a> is available as a machine- and human-readable JSON file.
     There is also a one-page
     <a href="martin-hanzel-resume-onepage.pdf">PDF</a>.
-  </p> <p>Capable of working remotely. Living in <strong>Lausanne</strong>, Switzerland. Citizen of the <strong>Slovak Republic</strong> (EU) and <strong>Canada</strong>. Swiss permit B.</p>
+  </p> <p>Capable of working remotely. Living in <strong>Lausanne</strong>, Switzerland. Citizen of the <strong>Slovak Republic</strong> (EU) and <strong>Canada</strong>. Swiss permit B.
 </p> <h2>Education</h2> <div class="row justify-content-center"><div class="col-lg col-md-6 col-12 mb-3 text-md-center"><h3>Master of Computer Science</h3> <i></i> <p>
     École Polytechnique Fédérale de Lausanne
     <br>
@@ -249,36 +263,36 @@ footer::selection {
     2013 - 2017
   </p> <p><strong>Research:</strong>
     Biological Computation, Genetic Engineering, Ecological Modelling
-  </p></div></div> <h2>Technical experience</h2> <div class="row job y-sep"><div class="col-md-4"><h3>Frontend Engineer (Remote)</h3> <p class="pl-3">GitLab Inc.</p> <p class="pl-3">2019</p></div> <div class="col-md-8"><ul><li>Self-managed tasks in an <strong>all-remote</strong> team of people from around the world.</p>
-</li><li>Participated in <strong>code reviews</strong> daily.</p>
-</li><li>Realized UI designs in <strong>responsive CSS</strong> for four or more device sizes.</p>
-</li><li>Created new <strong>UI components</strong> and migrated legacy jQuery code to <strong>ES6 + Vue</strong>.</p>
-</li><li>Practiced <strong>TDD</strong> and contributed to the migration of the test suite from Karma to Jest.</p>
-</li><li>Patched <strong>security</strong> holes in frontend code and managed security backports.</p>
-</li><li>Wrote at least as many lines of tests than production code, with <strong>100% coverage</strong>.</p>
-</li></ul></div></div><div class="row job y-sep"><div class="col-md-4"><h3>Web Developer</h3> <p class="pl-3">Pivotree</p> <p class="pl-3">2011 - 2018</p></div> <div class="col-md-8"><ul><li>Led R&amp;D for next-generation <strong>e-commerce</strong> technologies</p>
-</li><li>Developed <strong>full-stack</strong> B2B and B2C e-commerce applications for large retailers using the <strong>Oracle Commerce</strong> framework.</p>
-</li><li><strong>Analyzed market trends</strong> and improved the company&#39;s ability to market to potential clients.</p>
-</li><li>Worked <strong>remotely</strong> from Valencia, Spain while collaborating with a team in Ottawa, Canada.</p>
-</li><li>Clients include: Princess Auto, Lorex, Simons, and Videotron.</p>
-</li></ul></div></div><div class="row job y-sep"><div class="col-md-4"><h3>Freelance Web Developer</h3> <!----> <p class="pl-3">2013 - 2015</p></div> <div class="col-md-8"><ul><li>Designed and developed <strong>custom webapps</strong> for student groups at the University of Ottawa</p>
-</li><li>Worked closely with clients to deliver and maintain <strong>pixel-perfect</strong> solutions</p>
-</li><li>Clients include: University of Ottawa Healthcare Symposium, Actions for Healthcare, iGEMuOttawa</p>
-</li></ul></div></div> <h2>Leadership and management experience</h2> <div class="row job y-sep"><div class="col-md-4"><h3>Residence Mentor</h3> <p class="pl-3">University of Ottawa</p> <p class="pl-3">2014 - 2017</p></div> <div class="col-md-8"><ul><li>Designed and piloted a mentors-in-residence program to provide full-time academic support to first-year students.</p>
-</li><li>Increased funding for the Mentoring Centre by <strong>300%</strong> within a year.</p>
-</li><li>Increased resident conversion rate <strong>by a factor of 10</strong> within a year.</p>
-</li><li>Developed software to <strong>automate</strong> data entry and reduced bureaucratic workload from hours to a few minutes.</p>
-</li><li>Organized weekly study groups and coordinated monthly <strong>community-building events</strong> for residents.</p>
-</li></ul></div></div><div class="row job y-sep"><div class="col-md-4"><h3>President / Research Associate</h3> <p class="pl-3">University of Ottawa iGEM Team</p> <p class="pl-3">2013 - 2016</p></div> <div class="col-md-8"><ul><li>Led <strong>iGEMuOttawa</strong>, a genetic engineering and synthetic biology research group made up of undergraduate student researchers.</p>
-</li><li>Built <em>in vivo</em> genetic networks using computing and electronic engineering metaphors.</p>
-</li><li>Oversaw the group&#39;s <strong>finances, fundraising, and hiring</strong>.</p>
-</li><li>Wrote bioinformatics software for <strong>data analysis</strong> and genetic tooling.</p>
-</li><li><strong>Presented own research</strong> three times at a world-wide conference in Boston, U.S.A..</p>
-</li><li><strong>Consulted</strong> for a biotechnology startup in Ottawa.</p>
-</li><li><strong>Secured sponsorship</strong> from universities and biotech companies.</p>
-</li></ul></div></div><div class="row job y-sep"><div class="col-md-4"><h3>Founder</h3> <p class="pl-3">uEducate</p> <p class="pl-3">2013</p></div> <div class="col-md-8"><ul><li>Founded <strong>uEducate</strong>, an organization dedicated to <strong>promoting higher education</strong> in science and technology.</p>
-</li><li>Established an annual science competition for high school students in Ontario, Canada.</p>
-</li><li><strong>Created financial scholarships</strong> for aspiring science students, <strong>in the amount of $4000</strong> in the first year and more in years after.</p>
+  </p></div></div> <h2>Technical experience</h2> <div class="row job y-sep"><div class="col-md-4"><h3>Frontend Engineer (Remote)</h3> <p class="pl-3">GitLab Inc.</p> <p class="pl-3">2019</p></div> <div class="col-md-8"><ul><li>Self-managed tasks in an <strong>all-remote</strong> team of people from around the world.
+</li><li>Participated in <strong>code reviews</strong> daily.
+</li><li>Realized UI designs in <strong>responsive CSS</strong> for four or more device sizes.
+</li><li>Created new <strong>UI components</strong> and migrated legacy jQuery code to <strong>ES6 + Vue</strong>.
+</li><li>Practiced <strong>TDD</strong> and contributed to the migration of the test suite from Karma to Jest.
+</li><li>Patched <strong>security</strong> holes in frontend code and managed security backports.
+</li><li>Wrote at least as many lines of tests than production code, with <strong>100% coverage</strong>.
+</li></ul></div></div><div class="row job y-sep"><div class="col-md-4"><h3>Web Developer</h3> <p class="pl-3">Pivotree</p> <p class="pl-3">2011 - 2018</p></div> <div class="col-md-8"><ul><li>Led R&amp;D for next-generation <strong>e-commerce</strong> technologies.
+</li><li>Developed <strong>full-stack</strong> B2B and B2C e-commerce applications for large retailers using the <strong>Oracle Commerce</strong> framework.
+</li><li><strong>Analyzed market trends</strong> and improved the company&#39;s ability to market to potential clients.
+</li><li>Worked <strong>remotely</strong> from Valencia, Spain while collaborating with a team in Ottawa, Canada.
+</li><li>Clients include: Princess Auto, Lorex, Simons, and Videotron.
+</li></ul></div></div><div class="row job y-sep"><div class="col-md-4"><h3>Freelance Web Developer</h3> <!----> <p class="pl-3">2013 - 2015</p></div> <div class="col-md-8"><ul><li>Designed and developed <strong>custom webapps</strong> for student groups at the University of Ottawa.
+</li><li>Worked closely with clients to deliver and maintain <strong>pixel-perfect</strong> solutions.
+</li><li>Clients include: University of Ottawa Healthcare Symposium, Actions for Healthcare, iGEMuOttawa.
+</li></ul></div></div> <h2>Leadership and management experience</h2> <div class="row job y-sep"><div class="col-md-4"><h3>Residence Mentor</h3> <p class="pl-3">University of Ottawa</p> <p class="pl-3">2014 - 2017</p></div> <div class="col-md-8"><ul><li>Designed and piloted a mentors-in-residence program to provide full-time academic support to first-year students.
+</li><li>Increased funding for the Mentoring Centre by <strong>300%</strong> within a year.
+</li><li>Increased resident conversion rate <strong>by a factor of 10</strong> within a year.
+</li><li>Developed software to <strong>automate</strong> data entry and reduced bureaucratic workload from hours to a few minutes.
+</li><li>Organized weekly study groups and coordinated monthly <strong>community-building events</strong> for residents.
+</li></ul></div></div><div class="row job y-sep"><div class="col-md-4"><h3>President / Research Associate</h3> <p class="pl-3">University of Ottawa iGEM Team</p> <p class="pl-3">2013 - 2016</p></div> <div class="col-md-8"><ul><li>Led <strong>iGEMuOttawa</strong>, a genetic engineering and synthetic biology research group made up of undergraduate student researchers.
+</li><li>Built <em>in vivo</em> genetic networks using computing and electronic engineering metaphors.
+</li><li>Oversaw the group&#39;s <strong>finances, fundraising, and hiring</strong>.
+</li><li>Wrote bioinformatics software for <strong>data analysis</strong> and genetic tooling.
+</li><li><strong>Presented own research</strong> three times at a world-wide conference in Boston, U.S.A..
+</li><li><strong>Consulted</strong> for a biotechnology startup in Ottawa.
+</li><li><strong>Secured sponsorship</strong> from universities and biotech companies.
+</li></ul></div></div><div class="row job y-sep"><div class="col-md-4"><h3>Founder</h3> <p class="pl-3">uEducate</p> <p class="pl-3">2013</p></div> <div class="col-md-8"><ul><li>Founded <strong>uEducate</strong>, an organization dedicated to <strong>promoting higher education</strong> in science and technology.
+</li><li>Established an annual science competition for high school students in Ontario, Canada.
+</li><li><strong>Created financial scholarships</strong> for aspiring science students, in the amount of <strong>$4000</strong> in the first year and more in years after.
 </li></ul></div></div> <h2>Skills</h2> <div class="row mb-4"><div class="col-lg-4 x-sep"><div class="px-3 mb-2 d-flex justify-content-between">
         Java + Scala
         <span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></span></div><div class="px-3 mb-2 d-flex justify-content-between">
@@ -325,9 +339,9 @@ footer::selection {
         French
         <span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="empty-star"></span></span></div></div><div class="col-md-4 x-sep"><div class="px-3 mb-2 d-flex justify-content-between">
         Spanish
-        <span><span class="star"></span><span class="star"></span><span class="empty-star"></span><span class="empty-star"></span><span class="empty-star"></span></span></div></div></div> <h2>Awards and certifications</h2> <div class="row justify-content-center y-sep"><div class="col-md-4 text-center mb-3"><h3>Cognos Prize</h3> <!----> <div>University of Ottawa</div> <div>2019</div> <div class="mt-2">For best thesis in Computer Science</div></div><div class="col-md-4 text-center mb-3"><h3>University Gold Medal</h3> <!----> <div>University of Ottawa</div> <div>2019</div> <div class="mt-2">For the highest standing in the faculty of Engineering</div></div><div class="col-md-4 text-center mb-3"><h3>Faculty Plaque</h3> <!----> <div>University of Ottawa</div> <div>2019</div> <div class="mt-2">For the highest standing in the Department of Computer Science</div></div><div class="col-md-4 text-center mb-3"><h3>Dean's Honour List</h3> <div>12 times of 12</div> <div>University of Ottawa</div> <div>2013 - 2019</div> <!----></div><div class="col-md-4 text-center mb-3"><h3>Undergraduate Research Scholarship</h3> <!----> <div>University of Ottawa</div> <div>2013</div> <div class="mt-2">One of 16 prestigious research positions awarded every year</div></div><div class="col-md-4 text-center mb-3"><h3>Grand Prize</h3> <!----> <div>Ottawa-Carleton Science and Engineering Olympics</div> <div>2012</div> <!----></div></div> <div class="row justify-content-center y-sep"><div class="col-md-4 text-center my-3"><h3>First Aid + CPR C + AED</h3> <a href="https://www.sja.ca/English/Courses-and-Training/Pages/Course%20Descriptions/Workplace-Courses.aspx">St. John's Ambulance</a></div><div class="col-md-4 text-center my-3"><h3>Non-Violent Crisis Intervention</h3> <a href="https://www.crisisprevention.com/What-We-Do/Nonviolent-Crisis-Intervention">Crisis Prevention Institute</a></div><div class="col-md-4 text-center my-3"><h3>Applied Suicide Intervention Skills Training (ASIST)</h3> <a href="https://www.livingworks.net/programs/asist/">LivingWorks</a></div></div> <h2>Selected works</h2> <div class="row justify-content-center"><div class="col-md-4 px-3 py-3"><div class="project card text-center"><!----> <div class="px-3 py-3"><h3>Share Tree DB</h3> <p>A distributed database system, based on blockchain, allowing the secure storage an sharing of data on untrusted hardware. Enables fine-grained and revokable permissioning while guaranteeing data integrity. Supports secure web-of-trust and user management.</p>
-</p> <p><a href="r/ShareTreeDB.pdf" class="text-capitalize mr-2 d-inline-block">thesis</a></p></div></div></div><div class="col-md-4 px-3 py-3"><div class="project card text-center"><img src="r/tre.png" class="card-img-top"> <div class="px-3 py-3"><h3>The River Engine</h3> <p>Research project in creating an agent-based model for simulating the lives of fish in a river ecosystem. It can simulate natural or man-made perturbations in an ecosystem and predict their effects. Built with Java and JavaFX. Thesis included.</p>
-</p> <p><a href="https://github.com/arthanzel/theriverengine/blob/master/Thesis.pdf" class="text-capitalize mr-2 d-inline-block">thesis</a><a href="http://github.com/arthanzel/theriverengine" class="text-capitalize mr-2 d-inline-block">code</a></p></div></div></div><div class="col-md-4 px-3 py-3"><div class="project card text-center"><img src="r/evaluatex.jpg" class="card-img-top"> <div class="px-3 py-3"><h3>Evaluatex</h3> <p>LaTeX and ASCIIMath evaluator for Javascript. Formerly written as a math parser for the <a href="http://github.com/arthanzel/quantumofcells">Quantum of Cells</a> differential equation solver, but usable as a standalone library. Written over the course of a weekend as an experiment in compilers and interpreters.</p>
+        <span><span class="star"></span><span class="star"></span><span class="empty-star"></span><span class="empty-star"></span><span class="empty-star"></span></span></div></div></div> <h2>Awards and certifications</h2> <div class="row justify-content-center y-sep"><div class="col-md-4 text-center mb-3"><h3>Cognos Prize</h3> <!----> <div>University of Ottawa</div> <div>2019</div> <div class="mt-2">For best thesis in Computer Science</div></div><div class="col-md-4 text-center mb-3"><h3>University Gold Medal</h3> <!----> <div>University of Ottawa</div> <div>2019</div> <div class="mt-2">For the highest standing in the faculty of Engineering</div></div><div class="col-md-4 text-center mb-3"><h3>Faculty Plaque</h3> <!----> <div>University of Ottawa</div> <div>2019</div> <div class="mt-2">For the highest standing in the Department of Computer Science</div></div><div class="col-md-4 text-center mb-3"><h3>Dean's Honour List</h3> <div>12 times of 12</div> <div>University of Ottawa</div> <div>2013 - 2019</div> <!----></div><div class="col-md-4 text-center mb-3"><h3>Undergraduate Research Scholarship</h3> <!----> <div>University of Ottawa</div> <div>2013</div> <div class="mt-2">One of 16 prestigious research positions awarded every year</div></div><div class="col-md-4 text-center mb-3"><h3>Grand Prize</h3> <!----> <div>Ottawa-Carleton Science and Engineering Olympics</div> <div>2012</div> <!----></div></div> <div class="row justify-content-center y-sep"><div class="col-md-4 text-center my-3"><h3>First Aid + CPR C + AED</h3> <a href="https://www.sja.ca/English/Courses-and-Training/Pages/Course%20Descriptions/Workplace-Courses.aspx">St. John's Ambulance</a></div><div class="col-md-4 text-center my-3"><h3>Non-Violent Crisis Intervention</h3> <a href="https://www.crisisprevention.com/What-We-Do/Nonviolent-Crisis-Intervention">Crisis Prevention Institute</a></div><div class="col-md-4 text-center my-3"><h3>Applied Suicide Intervention Skills Training (ASIST)</h3> <a href="https://www.livingworks.net/programs/asist/">LivingWorks</a></div></div> <h2>Selected works</h2> <div class="row justify-content-center"><div class="col-md-4 px-3 py-3"><div class="project card text-center"><!----> <div class="px-3 py-3"><h3>Share Tree DB</h3> <p>A distributed database system, based on blockchain, allowing the secure storage an sharing of data on untrusted hardware. Enables fine-grained and revokable permissioning while guaranteeing data integrity. Supports secure web-of-trust and user management.
+</p> <p><a href="r/ShareTreeDB.pdf" class="text-capitalize mr-2 d-inline-block">thesis</a></p></div></div></div><div class="col-md-4 px-3 py-3"><div class="project card text-center"><img src="r/tre.png" class="card-img-top"> <div class="px-3 py-3"><h3>The River Engine</h3> <p>Research project in creating an agent-based model for simulating the lives of fish in a river ecosystem. It can simulate natural or man-made perturbations in an ecosystem and predict their effects. Built with Java and JavaFX. Thesis included.
+</p> <p><a href="https://github.com/arthanzel/theriverengine/blob/master/Thesis.pdf" class="text-capitalize mr-2 d-inline-block">thesis</a><a href="http://github.com/arthanzel/theriverengine" class="text-capitalize mr-2 d-inline-block">code</a></p></div></div></div><div class="col-md-4 px-3 py-3"><div class="project card text-center"><img src="r/evaluatex.jpg" class="card-img-top"> <div class="px-3 py-3"><h3>Evaluatex</h3> <p>LaTeX and ASCIIMath evaluator for Javascript. Formerly written as a math parser for the <a href="http://github.com/arthanzel/quantumofcells">Quantum of Cells</a> differential equation solver, but usable as a standalone library. Written over the course of a weekend as an experiment in compilers and interpreters.
 </p> <p><a href="http://arthanzel.github.io/evaluatex" class="text-capitalize mr-2 d-inline-block">demo</a><a href="http://github.com/arthanzel/evaluatex" class="text-capitalize mr-2 d-inline-block">code</a></p></div></div></div></div></div>
 
   <footer class="py-3 my-5 text-center invert">You found an easter egg. Bee happy!</footer>

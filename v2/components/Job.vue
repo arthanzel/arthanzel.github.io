@@ -7,7 +7,7 @@ const marked = require("marked");
       return Array.isArray(year) ? `${year[0]} - ${year[1]}` : year;
     },
     markdown(str) {
-      return marked(str).replace(/(<p>|<\/p>)/, "");
+      return marked(str).replace(/(<p>|<\/p>)/g, "");
     },
   }
 });

@@ -22,7 +22,7 @@ const marked = require("marked");
       return Array.isArray(year) ? `${year[0]} - ${year[1]}` : year;
     },
     markdown(str) {
-      return marked(str).replace(/(<p>|<\/p>)/, "");
+      return marked(str).replace(/(<p>|<\/p>)/g, "");
     },
     splitArray(array, parts) {
       const arr = [],
@@ -77,10 +77,10 @@ const marked = require("marked");
     <p>
       I like boring, automatable solutions. My
       <a href="martin-hanzel-cv.json">full CV</a> is available as a machine- and human-readable JSON file.
-      There is also a one-page
+      <!-- There is also a one-page
       <a
         href="martin-hanzel-resume-onepage.pdf"
-      >PDF</a>.
+      >PDF</a>. -->
     </p>
     <p v-html="markdown(data.location)"></p>
 

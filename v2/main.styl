@@ -34,17 +34,23 @@ sepColorDark    = mix(base01, base02, 30%);
 bodyFont        = 'Open Sans', Arial, sans-serif;
 monoFont        = 'Source Code Pro', Consolas, monospace;
 
+themeTrans() {
+  transition: background-color 1s, color 1s, border-color 1s;
+}
+
 colorScheme(bg, text, emph, head, title, sep, card, cardShadow, filter) {
   background-color: bg;
   color: text;
-  strong { color: emph; }
-  h1, h2 { color: head; }
-  h3 { color: title; }
+  themeTrans();
+  strong { color: emph; themeTrans(); }
+  h1, h2 { color: head; themeTrans(); }
+  h3 { color: title; themeTrans(); }
   .card {
     background-color: card;
     box-shadow: cardShadow
+    themeTrans();
   }
-  .x-sep, .y-sep { border-color: sep; }
+  .x-sep, .y-sep { border-color: sep; themeTrans(); }
   .star, .half-star, .empty-star { filter: filter; }
 }
 
@@ -62,6 +68,7 @@ body {
       2px 2px 20px 0px darken(bgColor, 5%), // Card box shadow
       opacity(50%), // Stars filter
     );
+    a { color: blue; themeTrans(); }
     .switch-theme { background-color: base02; border-color: base0; }
   }
 
@@ -77,10 +84,13 @@ body {
       2px 2px 20px 0px darken(bgColorDark, 10%),
       invert() opacity(45%),
     );
-    a { color: yellow; }
+    a { color: yellow; themeTrans(); }
 
-    .switch-theme { background-color: base2; border-color: base00; }
-    footer { background-color base02; border-color: mix(yellow, base02, 50%); }
+    .switch-theme {
+      background-color: base2;
+      border-color: base00;
+      themeTrans();
+    }
   }
 }
 

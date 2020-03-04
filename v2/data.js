@@ -58,9 +58,9 @@ module.exports = {
       year: [2011, 2018],
       tag: 'technical',
       remarks: [
-        'Led R&D for next-generation **e-commerce** technologies',
+        'Led **R&D** for next-generation **e-commerce** applications using **isomorphic rendering** and **microservices**.',
         'Developed **full-stack** B2B and B2C e-commerce applications for large retailers using the **Oracle Commerce** framework.',
-        '**Analyzed market trends** and improved the company\'s ability to market to potential clients.',
+        'Analyzed market trend and improved the company\'s ability to market to potential clients.',
         'Worked **remotely** from Valencia, Spain while collaborating with a team in Ottawa, Canada.',
         'Clients include: Princess Auto, Lorex, Simons, and Videotron.',
       ],
@@ -70,9 +70,9 @@ module.exports = {
       year: [2013, 2015],
       tag: 'technical',
       remarks: [
-        'Designed and developed **custom webapps** for student groups at the University of Ottawa',
-        'Worked closely with clients to deliver and maintain **pixel-perfect** solutions',
-        'Clients include: University of Ottawa Healthcare Symposium, Actions for Healthcare, iGEMuOttawa',
+        'Designed and developed **custom webapps** for student groups at the University of Ottawa.',
+        'Worked closely with clients to deliver and maintain **pixel-perfect** solutions.',
+        'Clients include: University of Ottawa Healthcare Symposium, Actions for Healthcare, iGEMuOttawa.',
       ],
     },
     {
@@ -111,7 +111,7 @@ module.exports = {
       remarks: [
         'Founded **uEducate**, an organization dedicated to **promoting higher education** in science and technology.',
         'Established an annual science competition for high school students in Ontario, Canada.',
-        '**Created financial scholarships** for aspiring science students, **in the amount of $4000** in the first year and more in years after.',
+        '**Created financial scholarships** for aspiring science students, in the amount of **$4000** in the first year and more in years after.',
       ],
     },
   ],
