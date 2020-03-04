@@ -35,10 +35,10 @@ bodyFont        = 'Open Sans', Arial, sans-serif;
 monoFont        = 'Source Code Pro', Consolas, monospace;
 
 themeTrans() {
-  transition: background-color 1s, color 1s, border-color 1s;
+  transition: background-color 1s, color 1s, border-color 1s, box-shadow 1s;
 }
 
-colorScheme(bg, text, emph, head, title, sep, card, cardShadow, filter) {
+colorScheme(bg, text, emph, head, title, sep, card, cardShadow, filter_) {
   background-color: bg;
   color: text;
   themeTrans();
@@ -51,7 +51,7 @@ colorScheme(bg, text, emph, head, title, sep, card, cardShadow, filter) {
     themeTrans();
   }
   .x-sep, .y-sep { border-color: sep; themeTrans(); }
-  .star, .half-star, .empty-star { filter: filter; }
+  .star, .half-star, .empty-star { filter: filter_; transition: filter 1s; }
 }
 
 // Light/dark color scheme defs

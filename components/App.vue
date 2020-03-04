@@ -9,8 +9,8 @@ const marked = require("marked");
     Ed: requireVue("Education"),
     Stars: requireVue("Stars")
   },
-  created: function() {
-    console.log(this.technical);
+  created() {
+
   },
   data: () => ({
     arr: ["one", "two", "three"]

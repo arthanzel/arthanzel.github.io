@@ -7,13 +7,12 @@
   "author": "Martin Hanzel <arthanzel@gmail.com>",
   "license": "",
   "private": true,
-  "scripts": {
-    "build": "pug -P index.pug",
-    "watch": "pug -P -w index.pug"
-  },
+  "scripts": {},
   "dependencies": {
-    "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6",
+    "marked": "^0.8.0",
+    "stylus": "^0.54.7",
+    "vue": "^2.6.11",
+    "vue-server-renderer": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   }
 }
