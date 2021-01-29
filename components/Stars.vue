@@ -14,5 +14,5 @@
 </script>
 
 <template>
-  <span><span v-for="(cls, i) in classes" :key="i" :class="cls"></span></span>
+  <span style="whitespace: no-wrap;"><span v-for="(cls, i) in classes" :key="i" :class="cls"></span></span>
 </template>

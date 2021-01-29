@@ -8,10 +8,10 @@
     "linkedin": "https://linkedin.com/in/arthanzel"
   },
   "bio": [
-    "I'm a computer scientist, a genetic engineer, a mentor, and a successful geek. I love to share my passion for technology with everyone around me. I live in Lausanne, Switzerland, where I'm working towards a Master's degree at École Polytechnique Fédérale de Lausanne in one of the best computer science courses in the world.",
-    "In my adventures, I combined biology and programming because I was fascinated by how living things resemble computers. Programming life is a problem just as difficult and satisfying as programming silicon. I'm now looking for other difficult and satisfying problems. Perhaps your company has some. I can help solve them."
+    "I'm a computer scientist, a genetic engineer, a mentor, and a successful geek. I love to share my passion for technology with everyone around me. I live in Lausanne, Switzerland, where I'm working towards a Master's degree at [EPFL](https://www.epfl.ch/en/) in one of the best computer science courses in the world.",
+    "I'm looking for interesting and challenging employment at a remote-friendly company with a great culture and opportunities for advancement. Let's talk together about solving problems with technology."
   ],
-  "location": "Capable of working remotely. Living in **Lausanne**, Switzerland. Citizen of the **Slovak Republic** (EU) and **Canada**. Swiss permit B.",
+  "location": "Capable of working remotely. Living in **Lausanne**, Switzerland. Able to live+work in Canada, EU, and Switzerland.",
   "education": [
     {
       "title": "Master of Computer Science",
@@ -59,6 +59,35 @@
   ],
   "experience": [
     {
+      "title": "Software Developer (Student)",
+      "place": "eSMART Technologies SA",
+      "year": [
+        2020,
+        2021
+      ],
+      "tag": "technical",
+      "remarks": [
+        "Architected a **microservice-based**, **IoT** messaging system for internet-connected smart homes, capable of scaling to 100,000s of messages per second.",
+        "Overhauled existing security architecture to a **token-based** scheme and enhanced security of device discovery and pairing protocols.",
+        "Designed an **HTTP** and **WebSocket** API for inter-device messaging.",
+        "Evaluated database software for **performance**, **data warehousing**, and **data-gathering**.",
+        "Created automated provisioning and deployment processes for **cloud infrastructure**.",
+        "Partially **remote**."
+      ],
+      "technologies": [
+        "DevOps",
+        "Typescript",
+        "WebSockets",
+        "Vue.js",
+        "PostgreSQL",
+        "MySQL",
+        "TimescaleDB",
+        "RabbitMQ",
+        "Eclipse Mosquitto",
+        "AWS"
+      ]
+    },
+    {
       "title": "Frontend Engineer (Remote)",
       "place": "GitLab Inc.",
       "year": 2019,
@@ -71,6 +100,14 @@
         "Practiced **TDD** and contributed to the migration of the test suite from Karma to Jest.",
         "Patched **security** holes in frontend code and managed security backports.",
         "Wrote at least as many lines of tests than production code, with **100% coverage**."
+      ],
+      "technologies": [
+        "Asynchronous",
+        "HTML/CSS",
+        "JavaScript",
+        "Vue.js",
+        "Ruby",
+        "Git"
       ]
     },
     {
@@ -84,9 +121,17 @@
       "remarks": [
         "Led **R&D** for next-generation **e-commerce** applications using **isomorphic rendering** and **microservices**.",
         "Developed **full-stack** B2B and B2C e-commerce applications for large retailers using the **Oracle Commerce** framework.",
-        "Analyzed market trend and improved the company's ability to market to potential clients.",
         "Worked **remotely** from Valencia, Spain while collaborating with a team in Ottawa, Canada.",
         "Clients include: Princess Auto, Lorex, Simons, and Videotron."
+      ],
+      "technologies": [
+        "Agile",
+        "Java/J2EE",
+        "JSP",
+        "JavaScript",
+        "React/Redux",
+        "Oracle Commerce",
+        "OracleDB, MySQL"
       ]
     },
     {
@@ -152,28 +197,28 @@
     "Java + Scala": 5,
     "HTML": 5,
     "CSS": 5,
-    "JS + Node": 5,
-    "Typescript": 5,
-    "React + Vue": 5,
+    "JS/Typescript/Node": 5,
+    "React/Vue": 5,
     "Linux": 5,
     "Git": 5,
     "Go": 4,
     "C#": 4,
     "C/C++": 4,
     "Python": 4,
-    "SQL + RDBMS": 4,
+    "SQL/RDBMS": 4,
     "NoSQL": 4,
     "Mathematica": 4,
     "Matlab": 4,
     "Ruby": 3,
-    "OCaml": 2
+    "Lisp/Scheme": 2,
+    "Rust": 2
   },
   "languages": {
-    "English": 5,
-    "Slovak": 5,
-    "Czech": 5,
-    "French": 4,
-    "Spanish": 2
+    "English": "Native",
+    "Slovak": "Native",
+    "Czech": "Native",
+    "French": "B2",
+    "Spanish": "A2"
   },
   "projects": [
     {

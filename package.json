@@ -13,6 +13,7 @@
     "stylus": "^0.54.7",
     "vue": "^2.6.11",
     "vue-server-renderer": "^2.6.11",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "yaml": "^1.10.0"
   }
 }

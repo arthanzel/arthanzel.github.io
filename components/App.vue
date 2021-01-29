@@ -47,12 +47,12 @@ const marked = require("marked");
     skills() {
       const skills = Object.entries(this.data.skills);
       skills.sort((a, b) => b[1] - a[1]);
-      return this.splitArray(skills, 3);
+      return skills;
     },
     languages() {
-      const skills = Object.entries(this.data.languages);
-      skills.sort((a, b) => b[1] - a[1]);
-      return this.splitArray(skills, 3);
+      const langs = Object.entries(this.data.languages);
+      langs.sort((a, b) => b[1] - a[1]);
+      return langs
     }
   }
 });
@@ -74,9 +74,14 @@ const marked = require("marked");
       <strong>gitlab</strong>:
       <a :href="data.contact.gitlab">{{ urlToHandle(data.contact.gitlab) }}</a>
     </p>
+    <p v-for="text in data.bio" :key="text" v-html="markdown(text)"></p>
+    <hr />
     <p>
-      I like boring, automatable solutions. My
-      <a href="martin-hanzel-cv.json">full CV</a> is available as a machine- and human-readable JSON file.
+      I like boring, automatable solutions. My full CV is available as machine- and human-readable
+      <a href="martin-hanzel-cv.json">JSON</a>
+      and
+      <a href="martin-hanzel-cv.yml" type="text/plain">YAML</a>
+      files.
       <!-- There is also a one-page
       <a
         href="martin-hanzel-resume-onepage.pdf"
@@ -98,26 +103,27 @@ const marked = require("marked");
 
     <h2>Skills</h2>
     <div class="row mb-4">
-      <div class="col-lg-4 x-sep" v-for="(skillCol, i) in skills" :key="i">
+      <div class="col-lg-4 x-sep d-flex flex-column align-items-center" v-for="(skillCol, i) in splitArray(skills, 3)" :key="i">
         <div
-          class="px-3 mb-2 d-flex justify-content-between"
+          class="px-3 mb-2 col col-sm-8 col-lg d-flex justify-content-between"
           v-for="[name, rating] in skillCol"
           :key="name"
         >
-          {{name}}
+          <span>{{name}}</span>
           <Stars :num="rating" />
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 x-sep" v-for="(skillCol, i) in languages" :key="i">
+      <div class="col-lg-4 x-sep d-flex flex-column align-items-center" v-for="(skillCol, i) in splitArray(languages, 3)" :key="i">
         <div
-          class="px-3 mb-2 d-flex justify-content-between"
+          class="px-3 mb-2 col col-sm-8 col-lg d-flex justify-content-between"
           v-for="[name, rating] in skillCol"
           :key="name"
         >
-          {{name}}
-          <Stars :num="rating" />
+          <span>{{name}}</span>
+          <span>{{rating}}</span>
+          <!-- <Stars :num="rating" /> -->
         </div>
       </div>
     </div>

@@ -45,6 +45,7 @@ colorScheme(bg, text, emph, head, title, sep, card, cardShadow, filter_) {
   strong { color: emph; themeTrans(); }
   h1, h2 { color: head; themeTrans(); }
   h3 { color: title; themeTrans(); }
+  hr { border-color: sep; themeTrans(); }
   .card {
     background-color: card;
     box-shadow: cardShadow
@@ -157,6 +158,10 @@ h2::before {
   content: "##";
   left: -42px;
   @media (max-width: 1020px) { display: none; }
+}
+
+hr {
+  border-style: dashed;
 }
 
 .lead {
