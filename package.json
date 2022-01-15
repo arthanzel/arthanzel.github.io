@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {},
   "dependencies": {
-    "marked": "^0.8.0",
+    "marked": "^4.0.10",
     "stylus": "^0.54.7",
     "vue": "^2.6.11",
     "vue-server-renderer": "^2.6.11",
